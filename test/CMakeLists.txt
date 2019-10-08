@@ -1,2 +1,3 @@
-enable_testing()
-add_executable(test main.cpp)
+add_executable(NeuralNetworkTests main.cpp)
+target_link_libraries(NeuralNetworkTests gtest)
+add_test(NAME NeuralNetworkTests COMMAND NeuralNetworkTests)
